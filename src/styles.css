@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'assets/bootstrap.min.css';
+
+@import 'assets/font-awsome.css';
+
+@import 'assets/psl-design.css';
+@import 'assets/altitude.min.css';
+@import 'assets/ng-styles.css';
+
+@import 'assets/cabin.css';
+

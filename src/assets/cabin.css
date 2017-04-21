@@ -1,0 +1,633 @@
+.sa-cabin-select-container {
+    border-collapse: collapse;
+    display: inline-block;
+    padding: 1rem;
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #C8CFD6;
+    /*slate*/
+    z-index: 1;
+}
+
+/* line 14, ../scss/saaComponents/_virtualcabins.scss */
+.sa-cabin-select-container > .sa-cabin-select-container__highlite {
+    display: none;
+}
+
+
+/* line 18, ../scss/saaComponents/_virtualcabins.scss */
+.sa-cabin-select-container__hasHighlite > .sa-cabin-select-container__highlite {
+    display: block;
+    height: 100%;
+}
+
+/* line 22, ../scss/saaComponents/_virtualcabins.scss */
+.sa-cabin-select-container__hasHighlite {
+    padding-bottom: 3.5rem;
+    border-bottom: none;
+}
+
+/* line 26, ../scss/saaComponents/_virtualcabins.scss */
+.sa-cabin-select-container__hasHighlite main {
+    margin-bottom: 2rem;
+}
+
+/* line 29, ../scss/saaComponents/_virtualcabins.scss */
+.sa-cabin-select-container__highlite {
+    border-collapse: collapse;
+    border: 2px solid;
+    height: calc(100% - .5rem);
+    width: 100%;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+/* line 38, ../scss/saaComponents/_virtualcabins.scss */
+.sa-cabin-select-container__highlite.sa-cabin-select-container__highlite-style1 {
+    border-color: #3FA5DC;
+}
+/* line 41, ../scss/saaComponents/_virtualcabins.scss */
+.sa-cabin-select-container__highlite.sa-cabin-select-container__highlite-style2 {
+    border-color: #0979C0;
+}
+
+/* line 45, ../scss/saaComponents/_virtualcabins.scss */
+.sa-cabin-select-container__highlite .indicator {
+    font-size: .75rem;
+    background-color: #ccc;
+    color: #fff;
+    padding: 0 1rem;
+    line-height: 2rem;
+    height: 2rem;
+    position: absolute;
+    bottom: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: not-allowed;
+}
+/* line 59, ../scss/saaComponents/_virtualcabins.scss */
+.sa-cabin-select-container__highlite .indicator.indicator-style-1 {
+    background-color: #3FA5DC;
+}
+/* line 62, ../scss/saaComponents/_virtualcabins.scss */
+.sa-cabin-select-container__highlite .indicator.indicator-style-2 {
+    background-color: #0979C0;
+}
+
+
+/* line 73, ../scss/saaComponents/_virtualcabins.scss */
+.ohanddee {
+    display: inline-block;
+    margin: 0;
+    height: 5.75rem;
+}
+
+/* line 78, ../scss/saaComponents/_virtualcabins.scss */
+.ohanddee li {
+    float: left;
+    height: 3.2rem;
+    line-height: 4rem;
+}
+
+/* line 83, ../scss/saaComponents/_virtualcabins.scss */
+.ohanddee li:nth-child(2) {
+    padding: 0 .5rem;
+    font-size: 1.25rem;
+    color: #0979C0;
+}
+
+/* line 88, ../scss/saaComponents/_virtualcabins.scss */
+.ohanddee li:nth-child(4),
+.ohanddee li:nth-child(5) {
+    color: #656B75;
+    font-size: 80%;
+    display: inline-block;
+    line-height: 1.2;
+    height: auto;
+    clear: both;
+}
+
+/* line 97, ../scss/saaComponents/_virtualcabins.scss */
+.ohanddee li:nth-child(4) span:nth-of-type(2),
+.ohanddee li:nth-child(5) a:nth-of-type(2) {
+    margin: 0 .5rem;
+}
+
+/* line 101, ../scss/saaComponents/_virtualcabins.scss */
+.ohanddee li:nth-child(4) span {
+    display: inline-block;
+}
+
+/* line 104, ../scss/saaComponents/_virtualcabins.scss */
+.ohanddee li:nth-child(5) a {
+    margin-top: .5rem;
+    display: inline-block;
+    color: #656B75;
+}
+
+/* line 109, ../scss/saaComponents/_virtualcabins.scss */
+.ohanddee li h2,
+.ohanddee li h5 {
+    margin: 0;
+}
+
+/* line 113, ../scss/saaComponents/_virtualcabins.scss */
+.ohanddee li h2 {
+    font-size: 1.85rem;
+}
+
+/* line 114, ../scss/saaComponents/_virtualcabins.scss */
+.ohanddee li h5 {
+    color: #656B75;
+    font-size: 80%;
+}
+
+
+@media screen and (max-width: 993px) {
+    /* line 119, ../scss/saaComponents/_virtualcabins.scss */
+    .ohanddee {
+        margin-bottom: 2.5rem;
+    }
+
+    /* line 122, ../scss/saaComponents/_virtualcabins.scss */
+    .ohanddee li {
+        height: 3rem;
+        line-height: 3rem;
+    }
+
+    /* line 126, ../scss/saaComponents/_virtualcabins.scss */
+    .ohanddee li:nth-child(2) {
+        padding: 0 .25rem;
+    }
+
+    /* line 129, ../scss/saaComponents/_virtualcabins.scss */
+    .ohanddee li h2 {
+        font-size: 1.5rem;
+    }
+
+    /* line 130, ../scss/saaComponents/_virtualcabins.scss */
+    .ohanddee li h5,
+    .ohanddee li:nth-child(4),
+    .ohanddee li:nth-child(5) {
+        font-size: 90%;
+    }
+}
+/* line 137, ../scss/saaComponents/_virtualcabins.scss */
+.sa-cabin-select-container .sa-cabin-select-accordion-head {
+    cursor: pointer;
+    padding-left: 2.5rem;
+    padding-right: 1rem;
+    background-color: #ECEFF3 !important;
+    /*mist*/
+    display: inline-block;
+    position: relative;
+    min-height: 2.5rem;
+    height: 3rem;
+    min-width: 2rem;
+    text-align: right;
+    border: 1px solid #C8CFD6;
+    /*moon*/
+    -webkit-border-radius: .25rem;
+    -moz-border-radius: .25rem;
+    border-radius: .25rem;
+}
+
+
+/* line 158, ../scss/saaComponents/_virtualcabins.scss */
+.sa-cabin-select-container .sa-cabin-select-accordion-head[aria-expanded="true"] > .sa-option-select__select-cabin-tab {
+    background: #FCBC08;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+/* line 166, ../scss/saaComponents/_virtualcabins.scss */
+.sa-cabin-select-container .sa-cabin-select-accordion-head.has-under-banner {
+    -webkit-border-radius: .25rem .25rem 0px 0px;
+    -moz-border-radius: .25rem .25rem 0px 0px;
+    border-radius: .25rem .25rem 0px 0px;
+    border-bottom: none;
+    margin-left: 5px;
+}
+
+/* line 172, ../scss/saaComponents/_virtualcabins.scss */
+.sa-option-select__select-cabin-tab {
+    color: #fff;
+    text-align: center;
+    height: 100%;
+    line-height: 3rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2rem;
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+    z-index: 1;
+}
+
+
+/* line 193, ../scss/saaComponents/_virtualcabins.scss */
+.sa-cabin-tab-nav {
+    margin-top: 1.5rem;
+}
+
+/* line 196, ../scss/saaComponents/_virtualcabins.scss */
+.sa-cabin-tab-nav ul li .sa-option-select__select-cabin-tab {
+    background-color: #98A2B1;
+}
+
+/* line 199, ../scss/saaComponents/_virtualcabins.scss */
+.sa-cabin-tab-nav ul li:first-of-type .sa-option-select__select-cabin-tab {
+    background-color: #C8CFD6;
+}
+
+/* line 202, ../scss/saaComponents/_virtualcabins.scss */
+.sa-cabin-tab-nav ul li:last-of-type .sa-option-select__select-cabin-tab {
+    background-color: #656B75;
+}
+
+/* line 205, ../scss/saaComponents/_virtualcabins.scss */
+.sa-cabin-select-container .sa-cabin-select-accordion-head.has-under-banner .sa-option-select__select-cabin-tab {
+    border-bottom-left-radius: 0rem;
+}
+
+/* line 208, ../scss/saaComponents/_virtualcabins.scss */
+.sa-cabin-select-container .sa-cabin-select-accordion-head .price-label {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+/* line 213, ../scss/saaComponents/_virtualcabins.scss */
+.sa-cabin-select-container .sa-cabin-select-accordion-head data > span {
+    color: #656B75;
+    /*graphite*/
+    font-size: .75rem;
+    margin-left: .2rem;
+    margin-right: .2rem;
+}
+
+
+
+/* line 222, ../scss/saaComponents/_virtualcabins.scss */
+.sa-cabin-select-container .sa-cabin-select-accordion-head > span:first-of-type {
+    font-size: .75rem;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #656B75;
+    /*graphite*/
+    margin-top: .25rem;
+}
+
+/* line 230, ../scss/saaComponents/_virtualcabins.scss */
+.upper-label,
+.under-banner {
+    width: -webkit-calc(100% + 2px);
+    width: -moz-calc(100% + 2px);
+    width: calc(100% + 2px);
+    height: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    position: absolute;
+    left: -1px;
+}
+
+/* line 241, ../scss/saaComponents/_virtualcabins.scss */
+.under-banner {
+    font-size: .75rem;
+    padding: 0 .25rem 0 .25rem;
+    background-color: #3FA5DC;
+    color: #fff;
+    margin-bottom: 2rem;
+    top: -webkit-calc(3rem - 1px);
+    top: -moz-calc(3rem - 1px);
+    top: calc(3rem - 1px);
+    -webkit-border-radius: 0px 0px .25rem .25rem;
+    -moz-border-radius: 0px 0px .25rem .25rem;
+    border-radius: 0px 0px .25rem .25rem;
+}
+
+/* line 254, ../scss/saaComponents/_virtualcabins.scss */
+.upper-label {
+    background-color: transparent;
+    top: -1.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: .85rem;
+    z-index: 1;
+}
+
+/* line 265, ../scss/saaComponents/_virtualcabins.scss */
+div.vcabin {
+    padding: 0;
+    width: 100%;
+}
+
+/* line 269, ../scss/saaComponents/_virtualcabins.scss */
+div.vcabin[aria-hidden="true"] {
+    display: none;
+}
+
+/* line 272, ../scss/saaComponents/_virtualcabins.scss */
+.panel {
+    clear: both;
+    margin: 0 0 0 0;
+    width: 100%;
+}
+
+/* line 281, ../scss/saaComponents/_virtualcabins.scss */
+.sa-virtual-cabin label {
+    color: #656B75 !important;
+    border-collapse: collapse;
+    border: 1px solid #C8CFD6;
+    background-color: #ECEFF3;
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+    display: block !important;
+    padding: 0.75rem !important;
+    padding-left: 3rem !important;
+    position: relative;
+    min-height: 15rem;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    -webkit-border-radius: .25rem;
+    -moz-border-radius: .25rem;
+    border-radius: .25rem;
+}
+/* line 302, ../scss/saaComponents/_virtualcabins.scss */
+.sa-virtual-cabin label > span.small {
+    margin-left: 1em;
+    text-indent: -1em;
+}
+/* line 306, ../scss/saaComponents/_virtualcabins.scss */
+.sa-virtual-cabin label .h3, .sa-virtual-cabin label .price-label {
+    color: #313131 !important;
+}
+/* line 307, ../scss/saaComponents/_virtualcabins.scss */
+.sa-virtual-cabin label .h3 {
+    text-transform: uppercase !important;
+    font-weight: 600;
+    font-size: 95% !important;
+    margin-bottom: .5rem;
+}
+/* line 313, ../scss/saaComponents/_virtualcabins.scss */
+.sa-virtual-cabin label .bottom-prompt {
+    color: #0979C0;
+    font-style: italic;
+    font-size: 85%;
+}
+
+.cabin-panel .price-label {
+    right: 0;
+    margin-right: 1rem;
+}
+
+.cabin-panel .price-label, .cabin-panel .bottom-prompt {
+    position: absolute;
+    bottom: 0;
+}
+
+.sa-cabin-select-panel-content__inline-label {
+    color: #98a2b1;
+    display: table-cell;
+    vertical-align: bottom;
+    height: 2rem;
+    max-width: 5rem;
+    position: absolute;
+    top: 0px !important;
+    right: 0;
+    font-size: .65rem;
+    line-height: 1.1;
+    text-align: center;
+}
+
+.sa-cabin-select-panel-content__inline-label::before {
+    content: '\f0a3';
+    color: #0979c0;
+    font-family: 'FontAwesome';
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 1rem;
+    display: inline-block;
+    font-size: 2rem;
+}
+/* line 318, ../scss/saaComponents/_virtualcabins.scss */
+.sa-virtual-cabin label .price-label {
+    font-weight: 700;
+    font-size: 110%;
+}
+/* line 322, ../scss/saaComponents/_virtualcabins.scss */
+.sa-virtual-cabin label .price-label > span {
+    font-size: 75%;
+}
+
+/* line 332, ../scss/saaComponents/_virtualcabins.scss */
+.sa-virtual-cabin label::before {
+    content: '';
+    background-color: #C8CFD6;
+    width: 2.5rem;
+    height: 100%;
+    vertical-align: top;
+    display: inline-block !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-border-radius: .25rem 0 0 .25rem;
+    -moz-border-radius: .25rem 0 0 .25rem;
+    border-radius: .25rem 0 0 .25rem;
+}
+
+
+/* line 352, ../scss/saaComponents/_virtualcabins.scss */
+.sa-virtual-cabin label.cabin-active,
+.sa-virtual-cabin:hover label {
+    position: relative;
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+/* line 366, ../scss/saaComponents/_virtualcabins.scss */
+.sa-virtual-cabin > label.cabin-active::before,
+.sa-virtual-cabin:hover > label::before {
+    background-color: #FCBC08 !important;
+    -webkit-transition: background 300ms ease-in-out;
+    -moz-transition: background 300ms ease-in-out;
+    -ms-transition: background 300ms ease-in-out;
+    -o-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+}
+
+/* line 375, ../scss/saaComponents/_virtualcabins.scss */
+.sa-cabin-is-checked::after {
+    content: '\f058';
+    font-family: "FontAwesome";
+    font-size: 9rem;
+    opacity: .5;
+    display: inline-block;
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* line 389, ../scss/saaComponents/_virtualcabins.scss */
+.sa-cabin-tab-nav .tablist {
+    margin: 0 0px;
+    padding: 0;
+    list-style: none;
+}
+
+/* line 394, ../scss/saaComponents/_virtualcabins.scss */
+ul.controlList {
+    list-style-type: none;
+    margin: 0;
+    display: inline-table;
+    width: 100%;
+}
+
+
+/* line 403, ../scss/saaComponents/_virtualcabins.scss */
+ul.controlList.sa-cabin-checkbox > li {
+    display: table-cell;
+    height: 100%;
+    position: relative;
+}
+
+/* line 408, ../scss/saaComponents/_virtualcabins.scss */
+ul.controlList.sa-cabin-checkbox input[type="checkbox"] {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+/* line 415, ../scss/saaComponents/_virtualcabins.scss */
+ul.controlList li.sa-virtual-cabin {
+    padding: 0;
+}
+
+/* line 418, ../scss/saaComponents/_virtualcabins.scss */
+ul.controlList li.sa-virtual-cabin:first-of-type {
+    padding-right: 1rem;
+}
+
+/* line 421, ../scss/saaComponents/_virtualcabins.scss */
+ul.controlList li.sa-virtual-cabin:last-of-type {
+    padding-left: 1rem;
+}
+
+@media only screen and (min-width: 993px) {
+    /* line 440, ../scss/saaComponents/_virtualcabins.scss */
+    .display-table-cell {
+        float: none;
+    }
+}
+@media only screen and (max-width: 992px) {
+    /* line 444, ../scss/saaComponents/_virtualcabins.scss */
+    .display-table-cell {
+        float: left;
+    }
+
+    /* line 447, ../scss/saaComponents/_virtualcabins.scss */
+    .ohanddee__center {
+        /* for small viewports, the O&D is centered on the screen */
+        text-align: center;
+    }
+
+    /* line 451, ../scss/saaComponents/_virtualcabins.scss */
+    ul.controlList li.sa-virtual-cabin {
+        padding: 0rem !important;
+    }
+
+    /* line 454, ../scss/saaComponents/_virtualcabins.scss */
+    .sa-cabin-select-container .sa-cabin-select-accordion-head.has-under-banner {
+        margin-bottom: 4.25rem;
+        margin-left: 5px;
+    }
+
+    /* line 457, ../scss/saaComponents/_virtualcabins.scss */
+    .sa-cabin-select-accordion-head {
+        width: 100%;
+        margin-bottom: 2.75rem;
+        margin-left: 5px;
+    }
+
+    /* line 461, ../scss/saaComponents/_virtualcabins.scss */
+    .sa-cabin-select-accordion-head label {
+        line-height: 3rem;
+    }
+
+    /* line 464, ../scss/saaComponents/_virtualcabins.scss */
+    .sa-cabin-select-container nav.flight h2 {
+        font-size: 1.5rem;
+    }
+}
+@media screen and (min-width: 900px) and (max-width: 990px) {
+    /* line 469, ../scss/saaComponents/_virtualcabins.scss */
+    .sa-cabin-select-container nav.flight h2 {
+        font-size: 1.5rem;
+    }
+
+    /* line 472, ../scss/saaComponents/_virtualcabins.scss */
+    .sa-cabin-select-container .arrow-cell {
+        line-height: 2rem;
+        margin: .2rem;
+    }
+
+    /* line 476, ../scss/saaComponents/_virtualcabins.scss */
+    /*html[dir="rtl"] .sa-cabin-select-container .arrow-cell {*/
+        /*-webkit-transform: scaleX(-1);*/
+        /*-moz-transform: scaleX(-1);*/
+        /*-o-transform: scaleX(-1);*/
+        /*transform: scaleX(-1);*/
+        /*-ms-filter: "FlipH";*/
+        /*filter: FlipH;*/
+    /*}*/
+}
+/* line 485, ../scss/saaComponents/_virtualcabins.scss */
+
+.right-align {
+    text-align: right;
+}
+
+
+
+
+.sa-cabin-tab-nav ul li.active {
+    background-color:#123456 !important;
+    color: red;
+}
+
+
+.sa-cabin-tab-nav ul li:first-of-type .active {
+    background-color: yellow !important;
+    color: red;
+}
+
