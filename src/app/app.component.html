@@ -38,7 +38,7 @@
             <span class="fullblock">from</span>
             <data class="price-label" value="2,432.00"><span>{{section.currency}}</span>{{section.price}}</data>
             <data class="sa-option-select__select-cabin-tab" value="collapse"><i
-              class="fa fa-chevron-down" aria-hidden="true" [ngClass]="{'yellow-bg': getFlag(i) }"></i></data>
+              class="fa fa-chevron-down" aria-hidden="true" [ngClass]="{'yellow-bg': i == selectedTabIndex }"></i></data>
             <data class="under-banner rtl-switch" aria-label="Best Deal!" value="Best Deal">Best Deal</data>
           </li>
 
