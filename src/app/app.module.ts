@@ -4,15 +4,21 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import {CartsModule} from "./carts/carts";
+import {CabinComponent} from "./cabin/cabin";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CabinComponent,
+
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+
+    CartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
