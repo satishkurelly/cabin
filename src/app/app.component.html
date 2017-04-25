@@ -1,7 +1,7 @@
 <div class="container">
 
   <div id="trip" class="sa-cabin-select-container" tabindex="-1" role="navigation"
-       *ngFor="let options of flightoptions;">
+       *ngFor="let options of flightoptions; let flighIndex=index;">
 
     <div class="row sa-cabin-tab-nav">
       <div class="col-xs-12 col-sm-4 ohanddee__center">
@@ -39,7 +39,7 @@
             <data class="price-label" value="2,432.00"><span>{{section.currency}}</span>{{section.price}}</data>
             <data class="sa-option-select__select-cabin-tab" value="collapse" [style.background]="getBgColor(i)"><i
               class="fa fa-chevron-down" aria-hidden="true"></i></data>
-            <data class="under-banner rtl-switch" aria-label="Best Deal!" value="Best Deal">Best Deal</data>
+            <data class="under-banner rtl-switch" aria-label="Best Deal!" value="Best Deal" *ngIf="getBestDealLabel(i)">Best Deal</data>
           </li>
 
 

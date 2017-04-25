@@ -68,4 +68,20 @@ export class AppComponent implements OnInit {
     return flag;
   }
 
+  getBestDealLabel(id):boolean{
+    let index = 0;
+
+    let classes = this.flightoptions[0].classes;
+    for(let i:number=0; i<classes.length; i++){
+      let item = classes[i];
+      if(i > 0 ){
+        if(parseFloat(classes[index].price) > parseFloat(item.price)){
+          index = i;
+        }
+      }
+    }
+
+    return id == index;
+  }
+
 }
