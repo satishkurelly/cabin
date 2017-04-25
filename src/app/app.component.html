@@ -54,7 +54,7 @@
             <!-- display-table-cell-->
             <li class="col-xs-12 col-lg-4 sa-virtual-cabin animated fadeIn m-t-md"
                 *ngFor="let upgrade of upgradeOptions; let i=index" (click)="selectedListItem = i">
-              <label class="cabin-panel" for="p2_opt1">
+              <label class="cabin-panel" for="p2_opt1" *ngIf="toggleSelection(i)">
                 <span class="sr-only">Economy Basic Focused. Press enter to select.</span>
                 <span class="h3 fullblock">{{upgrade.option}}<span class="sa-cabin-select-panel-content__inline-label">Best Value</span></span>
                 <span class="small fullblock">{{upgrade.foodBeverage}}</span>
@@ -65,7 +65,9 @@
               </label>
               <input id="p2_opt1" class="" type="checkbox" name="cabin" value="Economy Basic" tabindex="1">
 
-              <button *ngIf="selectedListItem == i">select fare</button>
+              <div *ngIf="!toggleSelection(i)" class="sa-cabin-is-checked">
+              <span class="h3 fullblock">Selected!</span><br><span class="h6 fullblock">Now select an inbound flight.</span>
+              </div>
             </li>
           </ul>
 

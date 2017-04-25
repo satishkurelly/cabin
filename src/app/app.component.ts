@@ -44,6 +44,8 @@ export class AppComponent implements OnInit {
   selectedListItem:number = -1;
   onItemClick(index):void{
     this.selectedTabIndex = index;
+    this.selectedListItem = -1;
+    this.upgradeOptions = [];
     this.upgradeOptions  = [{ option: 'Economy Basic', price: '428.71', currency: 'USD', optionstext: 'Food & Beverages for Purchase', seatsLeft: '3 Seats Left!', foodBeverage: 'Food  & Beverages for Purchase', Wifi: '', bookingRrefund: ''},
       { option: 'Economy Plus', price: '889.71', currency: 'USD', optionstext: 'Food & Beverages for Purchase', seatsLeft: '5 Seats Left!', foodBeverage: 'Food  & Beverages for Purchase', Wifi: '', bookingRrefund: ''},
       { option: 'Economy Flex', price: 'One Sold', currency: '', optionstext: 'Food & Beverages for Purchase', seatsLeft: '4 Seats Left!', foodBeverage: 'Food  & Beverages for Purchase', Wifi: 'Available', bookingRrefund: 'Booking Changes Refundable'}];
@@ -57,6 +59,13 @@ export class AppComponent implements OnInit {
 
   getFlag(index):boolean{
     return this.selectedTabIndex == index;
+  }
+
+  toggleSelection(i):boolean{
+    let flag:boolean = true;
+    if(this.selectedTabIndex != -1 ) flag = true;
+    if(this.selectedListItem == i) flag = false;
+    return flag;
   }
 
 }
