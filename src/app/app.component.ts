@@ -51,6 +51,10 @@ export class AppComponent implements OnInit {
 
   }
 
+  getBgColor(i){
+    return i == this.selectedTabIndex ? 'yellow' :'#c8cfd6';
+  }
+
   getFlag(index):boolean{
     return this.selectedTabIndex == index;
   }

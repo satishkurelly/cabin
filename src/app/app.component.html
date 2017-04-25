@@ -31,14 +31,14 @@
         <ul class="tablist">
           <li id="tablist-li" class="sa-cabin-select-accordion-head tab m-t-md"
               *ngFor="let section of options.classes; let i = index" (click)="onItemClick(i)" role="button"
-              aria-controls="cdd6" aria-expanded="false" tabindex="0">
+              aria-controls="cdd6" aria-expanded="false" tabindex="0" >
             <data class="upper-label" aria-hidden="true" value="First Class">{{section.class}}</data>
             <data class="upper-label" aria-hidden="true" value="First Class">{{section.class}}</data>
             <data class="upper-label" aria-hidden="true" value="First Class">{{section.class}}</data>
             <span class="fullblock">from</span>
             <data class="price-label" value="2,432.00"><span>{{section.currency}}</span>{{section.price}}</data>
-            <data class="sa-option-select__select-cabin-tab" value="collapse"><i
-              class="fa fa-chevron-down" aria-hidden="true" [ngClass]="{'yellow-bg': i == selectedTabIndex }"></i></data>
+            <data class="sa-option-select__select-cabin-tab" value="collapse" [style.background]="getBgColor(i)"><i
+              class="fa fa-chevron-down" aria-hidden="true"></i></data>
             <data class="under-banner rtl-switch" aria-label="Best Deal!" value="Best Deal">Best Deal</data>
           </li>
 
