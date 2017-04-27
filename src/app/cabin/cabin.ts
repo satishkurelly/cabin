@@ -39,5 +39,15 @@ export class CabinComponent implements OnInit {
     { option: 'Economy Plus', price: '889.71', currency: 'USD', optionstext: 'Food & Beverages for Purchase', seatsLeft: '5 Seats Left!', foodBeverage: 'Food  & Beverages for Purchase', Wifi: '', bookingRrefund: ''},
     { option: 'Economy Flex', price: 'One Sold', currency: '', optionstext: 'Food & Beverages for Purchase', seatsLeft: '4 Seats Left!', foodBeverage: 'Food  & Beverages for Purchase', Wifi: 'Available', bookingRrefund: 'Booking Changes Refundable'}];
 
+  selectedTabIndex:number = -1;
+  selectedListItem:number = -1;
+  onOptionClick(index):void{
+    // this._isCollapsedContent =  !_isCollapsedContent;
+    this.selectedTabIndex = index;
+    this.upgradeOptions  = [{ option: 'Economy Basic', price: '428.71', currency: 'USD', optionstext: 'Food & Beverages for Purchase', seatsLeft: '3 Seats Left!', foodBeverage: 'Food  & Beverages for Purchase', Wifi: '', bookingRrefund: ''},
+      { option: 'Economy Plus', price: '889.71', currency: 'USD', optionstext: 'Food & Beverages for Purchase', seatsLeft: '5 Seats Left!', foodBeverage: 'Food  & Beverages for Purchase', Wifi: '', bookingRrefund: ''},
+      { option: 'Economy Flex', price: 'One Sold', currency: '', optionstext: 'Food & Beverages for Purchase', seatsLeft: '4 Seats Left!', foodBeverage: 'Food  & Beverages for Purchase', Wifi: 'Available', bookingRrefund: 'Booking Changes Refundable'}];
+  }
+
 
 }

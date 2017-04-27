@@ -161,7 +161,7 @@ export class Carts implements AfterContentInit {
       } else {
         let index = tabs.findIndex((t: any) => t.active);
         if (index < 0) {
-           tabs[0].active = true;
+          tabs[0].active = true;
         } else {
           this.selectedIndex = index;
         }

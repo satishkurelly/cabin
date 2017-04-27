@@ -26,7 +26,7 @@
     </div><!--End Col-->
     <div class="col-xs-12 col-sm-8 right-align">
       <ul class="tablist">
-        <li id="tablist-li" class="sa-cabin-select-accordion-head tab m-t-md" *ngFor="let section of options.classes; let i = index"  role="button" aria-controls="cdd6" aria-expanded="false" tabindex="0">
+        <li id="tablist-li" class="sa-cabin-select-accordion-head tab m-t-md" *ngFor="let section of options.classes; let i = index" (click)="onOptionClick(i); _isCollapsedContent =  !_isCollapsedContent" role="button" aria-controls="cdd6" aria-expanded="false" tabindex="0">
           <data class="upper-label" aria-hidden="true" value="First Class">{{section.class}}</data>
           <data class="upper-label" aria-hidden="true" value="First Class">{{section.class}}</data>
           <data class="upper-label" aria-hidden="true" value="First Class">{{section.class}}</data>
@@ -46,8 +46,8 @@
         <h3 id="cdd4-label" class="sr-only">Economy Listings Expanded. Tab to Options.</h3>
         <ul class="controlList sa-cabin-checkbox">
           <!-- display-table-cell-->
-          <li class="col-xs-12 col-lg-4 sa-virtual-cabin animated fadeIn m-t-md" *ngFor="let upgrade of upgradeOptions">
-            <label class="cabin-panel" for="p2_opt1">
+          <li class="col-xs-12 col-lg-4 sa-virtual-cabin animated fadeIn m-t-md"  [ngClass]="{'sa-cabin-is-checked-box': i == selectedListItem }" *ngFor="let upgrade of upgradeOptions"  (click)="selectedIndex = i" (click)="onItemcartClick(i)" >
+            <label class="cabin-panel" for="p2_opt1" >
               <span class="sr-only">Economy Basic Focused. Press enter to select.</span>
               <span class="h3 fullblock">{{upgrade.option}}<span class="sa-cabin-select-panel-content__inline-label">Best Value</span></span>
               <span class="small fullblock">{{upgrade.foodBeverage}}</span>

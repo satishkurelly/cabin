@@ -1,24 +1,26 @@
+<div class="margin-top">
+
 <div class="carts-header-wrapper">
+
   <div role="button" class="prev-button" [class.disabled]="!canPageBack()" *ngIf="_shouldPaginate" (click)="previousPage()">
     <em class="prev-icon">Prev</em>
   </div>
   <div role="button" class="next-button" [class.disabled]="!canPageForward()" *ngIf="_shouldPaginate" (click)="nextPage()">
     <em class="next-icon">Next</em>
   </div>
+
   <div class="carts-canvas" [class.md2-paginated]="_shouldPaginate" role="tablist" tabindex="0" (keydown.arrowRight)="focusNextTab()" (keydown.arrowLeft)="focusPreviousTab()" (keydown.enter)="selectedIndex = focusIndex" (mousewheel)="scroll($event)">
     <div class="carts-header" [style.marginLeft]="-_offsetLeft + 'px'">
-      <div class="cart-label" role="tab" *ngFor="let dates of traveldates; let i = index" [class.focus]="focusIndex === i" [class.active]="selectedIndex === i" [class.disabled]="dates.disabled" (click)="focusIndex = selectedIndex = i">
+      <div class="cart-label" role="tab" *ngFor="let dates of traveldates; let i = index" [class.focus]="focusIndex === i" (click)="focusIndex = selectedIndex = i">
         <div class="item sa-date-price-slider__item valign-wrapper" >
           <div class="saa-dps-item">
-            <span>{{dates.date}}</span>
-            <span>{{dates.price}}</span >
+            <span class="sa-date-price-slider__date ">{{dates.date}}</span>
+            <span class="sa-date-price-slider__price">{{dates.price}}</span >
           </div>
         </div>
-
-
       </div>
-      <div class="cart-ink-bar" [style.left]="_inkBarLeft" [style.width]="_inkBarWidth"></div>
     </div>
   </div>
 </div>
 
+</div>

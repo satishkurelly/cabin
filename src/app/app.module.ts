@@ -6,11 +6,13 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import {CartsModule} from "./carts/carts";
 import {CabinComponent} from "./cabin/cabin";
+import {Seven} from "./owl-carosel/seven";
 
 @NgModule({
   declarations: [
     AppComponent,
     CabinComponent,
+    Seven
 
   ],
   imports: [
