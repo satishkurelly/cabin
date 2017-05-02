@@ -4,9 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import {CartsModule} from "./carts/carts";
+ // import {CartsModule} from "./carts/carts";
 import {CabinComponent} from "./cabin/cabin";
 import {Seven} from "./owl-carosel/seven";
+import {ShoppingCartModule} from "./tabs/shopping-cart";
+// import {Md2TabsModule} from "./tabs/tabs";
+// import {Md2TabsModule} from "./tabs/tabs";
 
 @NgModule({
   declarations: [
@@ -19,8 +22,9 @@ import {Seven} from "./owl-carosel/seven";
     BrowserModule,
     FormsModule,
     HttpModule,
-
-    CartsModule,
+    //
+    ShoppingCartModule,
+   // Md2TabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

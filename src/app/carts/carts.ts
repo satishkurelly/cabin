@@ -341,10 +341,10 @@ export const CARTS_DIRECTIVES: any[] = [CartLabel, Carts, Cart];
   exports: CARTS_DIRECTIVES,
   declarations: [Transclude, CartLabel, Carts, Cart],
 })
-export class CartsModule {
+export class CartsModuless {
   static forRoot(): ModuleWithProviders {
     return {
-      ngModule: CartsModule,
+      ngModule: CartsModuless,
       providers: []
     };
   }

@@ -40,28 +40,28 @@
       </ul>
     </div><!--End Col-->
   </div><!-- top row -->
-  <div class="row">
-    <div class="col-xs-12">
-      <div id="region_wrapper2">
-        <h3 id="cdd4-label" class="sr-only">Economy Listings Expanded. Tab to Options.</h3>
-        <ul class="controlList sa-cabin-checkbox">
-          <!-- display-table-cell-->
-          <li class="col-xs-12 col-lg-4 sa-virtual-cabin animated fadeIn m-t-md"  [ngClass]="{'sa-cabin-is-checked-box': i == selectedListItem }" *ngFor="let upgrade of upgradeOptions"  (click)="selectedIndex = i" (click)="onItemcartClick(i)" >
-            <label class="cabin-panel" for="p2_opt1" >
-              <span class="sr-only">Economy Basic Focused. Press enter to select.</span>
-              <span class="h3 fullblock">{{upgrade.option}}<span class="sa-cabin-select-panel-content__inline-label">Best Value</span></span>
-              <span class="small fullblock">{{upgrade.foodBeverage}}</span>
-              <span class="small fullblock">{{upgrade.Wifi}}</span>
-              <span class="small fullblock">{{upgrade.bookingRrefund}}</span>
-              <span class=" bottom-prompt">{{upgrade.seatsLeft}}</span>
-              <span class="price-label"><span>{{upgrade.currency}}</span> {{upgrade.price}}</span>
-            </label>
-            <input id="p2_opt1" class="" type="checkbox" name="cabin" value="Economy Basic" tabindex="1">
-          </li>
-        </ul>
+  <!--<div class="row">-->
+    <!--<div class="col-xs-12">-->
+      <!--<div id="region_wrapper2">-->
+        <!--<h3 id="cdd4-label" class="sr-only">Economy Listings Expanded. Tab to Options.</h3>-->
+        <!--<ul class="controlList sa-cabin-checkbox">-->
+          <!--&lt;!&ndash; display-table-cell&ndash;&gt;-->
+          <!--<li class="col-xs-12 col-lg-4 sa-virtual-cabin animated fadeIn m-t-md"  [ngClass]="{'sa-cabin-is-checked-box': i == selectedListItem }" *ngFor="let upgrade of upgradeOptions"  (click)="selectedIndex = i" (click)="onItemcartClick(i)" >-->
+            <!--<label class="cabin-panel" for="p2_opt1" >-->
+              <!--<span class="sr-only">Economy Basic Focused. Press enter to select.</span>-->
+              <!--<span class="h3 fullblock">{{upgrade.option}}<span class="sa-cabin-select-panel-content__inline-label">Best Value</span></span>-->
+              <!--<span class="small fullblock">{{upgrade.foodBeverage}}</span>-->
+              <!--<span class="small fullblock">{{upgrade.Wifi}}</span>-->
+              <!--<span class="small fullblock">{{upgrade.bookingRrefund}}</span>-->
+              <!--<span class=" bottom-prompt">{{upgrade.seatsLeft}}</span>-->
+              <!--<span class="price-label"><span>{{upgrade.currency}}</span> {{upgrade.price}}</span>-->
+            <!--</label>-->
+            <!--<input id="p2_opt1" class="" type="checkbox" name="cabin" value="Economy Basic" tabindex="1">-->
+          <!--</li>-->
+        <!--</ul>-->
 
-      </div><!-- end region wrapper -->
-    </div>
-  </div>
+      <!--</div>&lt;!&ndash; end region wrapper &ndash;&gt;-->
+    <!--</div>-->
+  <!--</div>-->
 
 </div>

@@ -32,7 +32,32 @@ export class CabinComponent implements OnInit {
       classes: [ { class: 'Economy', price: '428.00', currency: 'USD'},
         { class: 'Business', price: '1315.00', currency: 'USD'},
         { class: 'First', price: '4215.00', currency: 'USD'}]
+    },
+    {
+      deptairportcode: 'LHR',
+      arrivalairportcode: 'DEL',
+      flightno: 'AI162',
+      departtime: '06:44',
+      arrivaltime: '21:02',
+      nonstop: 'Nonstop',
+      duration: '13hr 58m',
+      classes: [ { class: 'Economy', price: '728.00', currency: 'USD'},
+        { class: 'Business', price: '1315.00', currency: 'USD'},
+        { class: 'First', price: '4215.00', currency: 'USD'}]
+    },
+    {
+      deptairportcode: 'LHR',
+      arrivalairportcode: 'DEL',
+      flightno: 'AI162',
+      departtime: '06:44',
+      arrivaltime: '21:02',
+      nonstop: 'Nonstop',
+      duration: '13hr 58m',
+      classes: [ { class: 'Economy', price: '528.00', currency: 'USD'},
+        { class: 'Business', price: '1315.00', currency: 'USD'},
+        { class: 'First', price: '4215.00', currency: 'USD'}]
     }
+
   ];
 
   upgradeOptions: any = [{ option: 'Economy Basic', price: '428.71', currency: 'USD', optionstext: 'Food & Beverages for Purchase', seatsLeft: '3 Seats Left!', foodBeverage: 'Food  & Beverages for Purchase', Wifi: '', bookingRrefund: ''},

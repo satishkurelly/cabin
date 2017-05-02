@@ -39,5 +39,14 @@ export class AppComponent implements OnInit {
     {date: 'Wed 08 Apr', price: '$911'},
     {date: 'Wed 09 Apr', price: '$912'},
     {date: 'Wed 10 Apr', price: '$913'},
+    {date: 'Wed 08 Apr', price: '$911'},
+    {date: 'Wed 09 Apr', price: '$912'},
+    {date: 'Wed 10 Apr', price: '$913'},
     ];
+
+
+
+  private change(tab: Event) {
+    console.log('Tab Changed');
+};
 }

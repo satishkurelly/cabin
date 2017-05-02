@@ -6,7 +6,18 @@
     <!--<calendar></calendar>-->
 
 
-<shopping-carts></shopping-carts>
+<!--<shopping-carts></shopping-carts>-->
   </div>
+
+
+  <carts class="test" selectedIndex="3" (change)="change($event)">
+    <cart *ngFor="let data of traveldates"
+             [date]="data.date"
+             [price]="data.price"
+             [active]="data.active"
+             [disabled]="data.disabled">
+    </cart>
+  </carts>
+
 </div>
 
